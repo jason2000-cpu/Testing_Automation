@@ -1,0 +1,52 @@
+var assert = require('assert');
+
+describe('Mocha Hooks', function(){
+
+    before('Execute Before All Tests', function(){
+        console.log('Execute Before All Tests');
+    });
+
+    beforeEach('Execute Before Each Test', function(){
+        console.log('Execute Before Each Test');
+    });
+
+    after('Execute After All Tests', function(){
+        console.log('Execute After All Tests');
+    });
+
+    afterEach('Execute After Each Test', function(){
+        console.log('Execute After Each Test');
+    });
+
+it('Addition of two numbers', function() {
+        var a = 10;
+        var b = 20;
+        var c = a + b;
+        
+        assert.equal(c, 30);
+    });
+
+    it('Subtraction of two numbers', function() {
+        var a = 20;
+        var b = 10;
+        var c = a - b;
+        
+        assert.equal(c, 10);
+    });
+
+    it('Multiplication of two numbers', function() {
+        var a = 10;
+        var b = 20;
+        var c = a * b;
+
+        assert.equal(c, 200);
+    });
+
+    it('Division of two numbers', function() {
+        var a = 20;
+        var b = 10;
+        var c = a / b;
+
+        assert.equal(c, 2);
+    });
+})

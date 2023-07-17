@@ -1,0 +1,17 @@
+{
+  "name": "0x02",
+  "version": "1.0.0",
+  "description": "intro to mocha",
+  "main": "hellomocha.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "jason2000-cpu",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
